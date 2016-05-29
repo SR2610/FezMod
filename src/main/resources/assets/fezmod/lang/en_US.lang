@@ -1,6 +1,8 @@
 #Items
 item.fezmod:fez.name=Fez
 item.fezmod:glasses.name=3D Glasses
+item.fezmod:scarf.name=Scarf
+item.fezmod:jellybaby.name=Jelly Babies
 
 #Creative Tabs
 itemgroup.fezmod=The Fez Mod

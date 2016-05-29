@@ -13,12 +13,14 @@ public class ModItems {
 	public static ItemFez itemFez = new ItemFez("fez");
 	public static ItemGlasses itemGlasses = new ItemGlasses("glasses");
 	public static ItemScarf itemScarf = new ItemScarf("scarf");
+	public static ItemJellyBaby jellyBabies = new ItemJellyBaby("jellybaby");
 
 
 	public static void createItems() {
 		registerItem(itemFez,"fez");
 		registerItem(itemGlasses,"glasses");
 		registerItem(itemScarf,"scarf");
+		registerItem(jellyBabies,"jellybaby");
 
 
 	}

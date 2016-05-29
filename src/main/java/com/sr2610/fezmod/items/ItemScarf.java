@@ -1,11 +1,15 @@
 package com.sr2610.fezmod.items;
 
+import com.sr2610.fezmod.FezMod;
 import com.sr2610.fezmod.client.model.ModelScarf;
 
 import net.minecraft.client.model.ModelBiped;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -28,6 +32,21 @@ public class ItemScarf extends ItemModArmor {
 	public ModelBiped getArmorModel(EntityLivingBase entityLiving, ItemStack itemStack, EntityEquipmentSlot armorSlot,
 			net.minecraft.client.model.ModelBiped _default) {
 		return model;
+	}
+
+	@Override
+	public void onUpdate(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected) {
+		if (entityIn instanceof EntityPlayer) {
+			EntityPlayer player = (EntityPlayer) entityIn;
+			if (player.inventory.hasItemStack(new ItemStack(ModItems.jellyBabies))) {
+				return;
+			} else {
+				int randNo = worldIn.rand.nextInt(10000);
+				if (randNo <= 1)
+					player.inventory.addItemStackToInventory(new ItemStack(ModItems.jellyBabies, 1));
+
+			}
+		}
 	}
 
 }
