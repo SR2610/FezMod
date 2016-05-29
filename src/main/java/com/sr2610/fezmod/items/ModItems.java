@@ -2,8 +2,6 @@ package com.sr2610.fezmod.items;
 
 import com.sr2610.fezmod.Reference;
 
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -14,6 +12,7 @@ public class ModItems {
 	public static ItemGlasses itemGlasses = new ItemGlasses("glasses");
 	public static ItemScarf itemScarf = new ItemScarf("scarf");
 	public static ItemJellyBaby jellyBabies = new ItemJellyBaby("jellybaby");
+	public static ItemBowtie bowtie = new ItemBowtie("bowtie");
 
 
 	public static void createItems() {
@@ -21,6 +20,7 @@ public class ModItems {
 		registerItem(itemGlasses,"glasses");
 		registerItem(itemScarf,"scarf");
 		registerItem(jellyBabies,"jellybaby");
+		registerItem(bowtie,"bowtie");
 
 
 	}

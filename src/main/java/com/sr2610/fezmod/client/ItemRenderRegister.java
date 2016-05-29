@@ -13,6 +13,7 @@ public class ItemRenderRegister {
 		registerItem(ModItems.itemGlasses);
 		registerItem(ModItems.itemScarf);
 		registerItem(ModItems.jellyBabies);
+		registerItem(ModItems.bowtie);
 
 	}
 
