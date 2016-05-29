@@ -10,6 +10,8 @@ public class ItemRenderRegister {
 
 	public static void registerItemRenderers() {
 		registerItem(ModItems.itemFez);
+		registerItem(ModItems.itemGlasses);
+
 	}
 
 	public static void registerItem(Item item) {

@@ -11,10 +11,13 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ModItems {
 	
 	public static ItemFez itemFez = new ItemFez("fez");
-	
+	public static ItemGlasses itemGlasses = new ItemGlasses("glasses");
+
 
 	public static void createItems() {
 		registerItem(itemFez,"fez");
+		registerItem(itemGlasses,"glasses");
+
 	}
 
 	private static void registerItem(Item item, String name) {
