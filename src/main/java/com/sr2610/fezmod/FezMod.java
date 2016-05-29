@@ -12,12 +12,12 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = Reference.MOD_ID, version = Reference.VERSION)
+@Mod(modid = Reference.MOD_ID, version = Reference.VERSION, guiFactory = Reference.GUIFACTORY)
 public class FezMod {
 
 	@SidedProxy(serverSide = Reference.PROXY_COMMON, clientSide = Reference.PROXY_CLIENT)
 	public static CommonProxy proxy;
-	
+
 	public static final CreativeTabs tabFezMod = new CreativeTabs(Reference.MOD_ID) {
 		@Override
 		public Item getTabIconItem() {

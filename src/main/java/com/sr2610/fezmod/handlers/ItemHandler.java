@@ -1,5 +1,6 @@
 package com.sr2610.fezmod.handlers;
 
+import com.sr2610.fezmod.config.ConfigHandler;
 import com.sr2610.fezmod.items.ModItems;
 
 import net.minecraft.entity.player.EntityPlayer;
@@ -12,7 +13,7 @@ public class ItemHandler {
 
 	@SubscribeEvent
 	public void FezDeathEvent(LivingDeathEvent event) {
-
+		if(ConfigHandler.fezRegen)
 		if (event.getEntityLiving() instanceof EntityPlayer) {
 			EntityPlayer player = (EntityPlayer) event.getEntityLiving();
 

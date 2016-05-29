@@ -1,5 +1,6 @@
 package com.sr2610.fezmod.proxy;
 
+import com.sr2610.fezmod.config.ConfigHandler;
 import com.sr2610.fezmod.handlers.ItemHandler;
 import com.sr2610.fezmod.items.ModItems;
 
@@ -12,11 +13,13 @@ public class CommonProxy {
 
 	public void preInit(FMLPreInitializationEvent event) {
 		ModItems.createItems();
+		ConfigHandler.initConfig(event);
 
 	}
 
 	public void init(FMLInitializationEvent event) {
 		MinecraftForge.EVENT_BUS.register(new ItemHandler());
+		MinecraftForge.EVENT_BUS.register(new ConfigHandler());
 
 	}
 
