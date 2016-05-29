@@ -5,7 +5,6 @@ import com.sr2610.fezmod.Reference;
 
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemArmor;
-import net.minecraft.item.ItemArmor.ArmorMaterial;
 
 public class ItemModArmor extends ItemArmor{
 	
@@ -14,7 +13,7 @@ public class ItemModArmor extends ItemArmor{
 		super(materialIn, renderIndexIn, equipmentSlotIn);
 
 		setUnlocalizedName(Reference.PREFIX_NAME + unlocalizedName);
-		setCreativeTab(ModItems.tabFezMod);
+		setCreativeTab(FezMod.tabFezMod);
 	}
 
 }

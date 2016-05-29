@@ -22,11 +22,6 @@ public class ModItems {
 
 	}
 	
-	public static final CreativeTabs tabFezMod = new CreativeTabs(Reference.MOD_ID) {
-		@Override
-		public Item getTabIconItem() {
-			return itemFez;
-		}
-	};
+
 
 }

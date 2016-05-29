@@ -1,5 +1,7 @@
 package com.sr2610.fezmod.client;
 
+import com.sr2610.fezmod.items.ModItems;
+
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;
@@ -7,7 +9,7 @@ import net.minecraftforge.client.model.ModelLoader;
 public class ItemRenderRegister {
 
 	public static void registerItemRenderers() {
-
+		registerItem(ModItems.itemFez);
 	}
 
 	public static void registerItem(Item item) {

@@ -1,7 +1,10 @@
 package com.sr2610.fezmod;
 
+import com.sr2610.fezmod.items.ModItems;
 import com.sr2610.fezmod.proxy.CommonProxy;
 
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -14,6 +17,13 @@ public class FezMod {
 
 	@SidedProxy(serverSide = Reference.PROXY_COMMON, clientSide = Reference.PROXY_CLIENT)
 	public static CommonProxy proxy;
+	
+	public static final CreativeTabs tabFezMod = new CreativeTabs(Reference.MOD_ID) {
+		@Override
+		public Item getTabIconItem() {
+			return ModItems.itemFez;
+		}
+	};
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
