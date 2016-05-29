@@ -11,6 +11,7 @@ public class ItemRenderRegister {
 	public static void registerItemRenderers() {
 		registerItem(ModItems.itemFez);
 		registerItem(ModItems.itemGlasses);
+		registerItem(ModItems.itemScarf);
 
 	}
 
