@@ -3,17 +3,26 @@ package com.sr2610.fezmod.items;
 import com.sr2610.fezmod.FezMod;
 import com.sr2610.fezmod.Reference;
 
+import net.minecraft.entity.Entity;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemStack;
 
-public class ItemModArmor extends ItemArmor{
-	
+public class ItemModArmor extends ItemArmor {
+
+	private String armorName;
+
 	public ItemModArmor(ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn,
 			String unlocalizedName) {
 		super(materialIn, renderIndexIn, equipmentSlotIn);
-
+		armorName = unlocalizedName;
 		setUnlocalizedName(Reference.PREFIX_NAME + unlocalizedName);
 		setCreativeTab(FezMod.tabFezMod);
+	}
+
+	@Override
+	public String getArmorTexture(ItemStack stack, Entity entity, EntityEquipmentSlot slot, String type) {
+		return Reference.ARMOR_PREFIX + armorName + ".png";
 	}
 
 }
