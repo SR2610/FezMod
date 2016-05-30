@@ -1,9 +1,12 @@
 package com.sr2610.fezmod.items;
 
+import java.util.List;
+
 import com.sr2610.fezmod.FezMod;
 import com.sr2610.fezmod.Reference;
 
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;

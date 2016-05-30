@@ -12,9 +12,9 @@ public class ItemRenderRegister {
 		registerItem(ModItems.itemFez);
 		registerItem(ModItems.itemGlasses);
 		registerItem(ModItems.itemScarf);
-		registerItem(ModItems.jellyBabies);
-		registerItem(ModItems.bowtie);
-		registerItem(ModItems.stetson);
+		registerItem(ModItems.itemJellyBabies);
+		registerItem(ModItems.itemBowtie);
+		registerItem(ModItems.itemStetson);
 
 	}
 

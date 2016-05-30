@@ -11,18 +11,18 @@ public class ModItems {
 	public static ItemFez itemFez = new ItemFez("fez");
 	public static ItemGlasses itemGlasses = new ItemGlasses("glasses");
 	public static ItemScarf itemScarf = new ItemScarf("scarf");
-	public static ItemJellyBaby jellyBabies = new ItemJellyBaby("jellybaby");
-	public static ItemBowtie bowtie = new ItemBowtie("bowtie");
-	public static ItemStetson stetson = new ItemStetson("stetson");
+	public static ItemJellyBaby itemJellyBabies = new ItemJellyBaby("jellybaby");
+	public static ItemBowtie itemBowtie = new ItemBowtie("bowtie");
+	public static ItemStetson itemStetson = new ItemStetson("stetson");
 
 
 	public static void createItems() {
 		registerItem(itemFez,"fez");
 		registerItem(itemGlasses,"glasses");
 		registerItem(itemScarf,"scarf");
-		registerItem(jellyBabies,"jellybaby");
-		registerItem(bowtie,"bowtie");
-		registerItem(stetson,"stetson");
+		registerItem(itemJellyBabies,"jellybaby");
+		registerItem(itemBowtie,"bowtie");
+		registerItem(itemStetson,"stetson");
 
 
 	}
