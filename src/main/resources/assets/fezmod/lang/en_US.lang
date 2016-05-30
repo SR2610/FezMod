@@ -1,0 +1,17 @@
+#Items
+item.fezmod:fez.name=Fez
+item.fezmod:glasses.name=3D Glasses
+item.fezmod:scarf.name=Scarf
+item.fezmod:jellybaby.name=Jelly Babies
+item.fezmod:bowtie.name=Bow Tie
+item.fezmod:stetson.name=Stetson
+
+#Creative Tabs
+itemGroup.fezmod=The Fez Mod
+
+#Flavour Lines
+flavour.fez= I wear a fez now!
+flavour.glasses=Oh, yes!
+flavour.scarf=Would you like a Jelly Baby?
+flavour.stetson=Stetsons are cool!
+flavour.bowtie=Bow Ties are cool too!
