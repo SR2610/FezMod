@@ -24,14 +24,11 @@ public class ItemScarf extends ItemModArmor {
 		super(ArmorMaterial.LEATHER, 0, EntityEquipmentSlot.CHEST, unlocalizedName);
 	}
 
-	@SideOnly(Side.CLIENT)
-	private ModelScarf model = new ModelScarf();
-
 	@Override
 	@SideOnly(Side.CLIENT)
 	public ModelBiped getArmorModel(EntityLivingBase entityLiving, ItemStack itemStack, EntityEquipmentSlot armorSlot,
 			net.minecraft.client.model.ModelBiped _default) {
-		return model;
+		return new ModelScarf();
 	}
 
 	@Override

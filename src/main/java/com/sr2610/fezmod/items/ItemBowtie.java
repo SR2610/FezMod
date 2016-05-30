@@ -20,14 +20,13 @@ public class ItemBowtie extends ItemModArmor{
 		super(ArmorMaterial.LEATHER, 0, EntityEquipmentSlot.CHEST, unlocalizedName);
 	}
 
-	@SideOnly(Side.CLIENT)
-	private ModelBowtie model = new ModelBowtie();
+
 
 	@Override
-	@SideOnly(Side.CLIENT)
+    @SideOnly(Side.CLIENT)
 	public ModelBiped getArmorModel(EntityLivingBase entityLiving, ItemStack itemStack, EntityEquipmentSlot armorSlot,
 			net.minecraft.client.model.ModelBiped _default) {
-		return model;
+		return new ModelBowtie();
 	}
 
 }

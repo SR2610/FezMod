@@ -20,13 +20,13 @@ public class ItemStetson extends ItemModArmor{
 		super(ArmorMaterial.LEATHER, 0, EntityEquipmentSlot.HEAD, unlocalizedName);
 	}
 
-	@SideOnly(Side.CLIENT)
-	private ModelStetson model = new ModelStetson();
+
+
 
 	@Override
-	@SideOnly(Side.CLIENT)
+    @SideOnly(Side.CLIENT)
 	public ModelBiped getArmorModel(EntityLivingBase entityLiving, ItemStack itemStack, EntityEquipmentSlot armorSlot,
 			net.minecraft.client.model.ModelBiped _default) {
-		return model;
+		return new ModelStetson();
 	}
 }

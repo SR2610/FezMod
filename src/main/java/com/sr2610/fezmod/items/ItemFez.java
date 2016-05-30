@@ -24,15 +24,13 @@ public class ItemFez extends ItemModArmor {
 	}
 
 
-	
-    @SideOnly(Side.CLIENT)
-    private ModelFez model = new ModelFez();
+
 	
 	@Override
     @SideOnly(Side.CLIENT)
 	public ModelBiped getArmorModel(EntityLivingBase entityLiving, ItemStack itemStack, EntityEquipmentSlot armorSlot, net.minecraft.client.model.ModelBiped _default)
     {
-        return model;
+        return new ModelFez();
     }
 
 
