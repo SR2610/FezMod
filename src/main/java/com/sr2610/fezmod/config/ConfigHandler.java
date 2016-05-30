@@ -9,6 +9,8 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class ConfigHandler {
 
+	public static Configuration configFile;
+	public static boolean enableFlavourLines = true;
 	public static boolean fezRegen = true;
 	public static float speedProbability = 0.1F;
 	public static int speedDuration = 5;
@@ -18,7 +20,7 @@ public class ConfigHandler {
 		syncConfig();
 	}
 
-	public static Configuration configFile;
+
 
 	@SubscribeEvent
 	public void onConfigChanged(ConfigChangedEvent.OnConfigChangedEvent eventArgs) {
@@ -27,6 +29,9 @@ public class ConfigHandler {
 	}
 
 	private static void syncConfig() {
+		
+		enableFlavourLines = configFile.getBoolean("Flavour Lines", Configuration.CATEGORY_GENERAL, enableFlavourLines,
+				"Set to false if you don't want flavour lines on items.");
 
 		fezRegen = configFile.getBoolean("Fez Regeneration", Configuration.CATEGORY_GENERAL, fezRegen,
 				"Set to false if you want the fez to be purely cosmetic.");

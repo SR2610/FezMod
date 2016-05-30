@@ -8,3 +8,10 @@ item.fezmod:stetson.name=Stetson
 
 #Creative Tabs
 itemGroup.fezmod=The Fez Mod
+
+#Flavour Lines
+flavour.fez= I wear a fez now!
+flavour.glasses=Oh, yes!
+flavour.scarf=Would you like a Jelly Baby?
+flavour.stetson=Stetsons are cool!
+flavour.bowtie=Bow Ties are cool too!
