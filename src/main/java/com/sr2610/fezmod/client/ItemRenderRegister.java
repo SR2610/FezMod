@@ -14,6 +14,7 @@ public class ItemRenderRegister {
 		registerItem(ModItems.itemScarf);
 		registerItem(ModItems.jellyBabies);
 		registerItem(ModItems.bowtie);
+		registerItem(ModItems.stetson);
 
 	}
 

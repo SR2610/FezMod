@@ -4,6 +4,7 @@ item.fezmod:glasses.name=3D Glasses
 item.fezmod:scarf.name=Scarf
 item.fezmod:jellybaby.name=Jelly Babies
 item.fezmod:bowtie.name=Bow Tie
+item.fezmod:stetson.name=Stetson
 
 #Creative Tabs
 itemGroup.fezmod=The Fez Mod

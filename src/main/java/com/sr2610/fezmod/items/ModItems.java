@@ -13,6 +13,7 @@ public class ModItems {
 	public static ItemScarf itemScarf = new ItemScarf("scarf");
 	public static ItemJellyBaby jellyBabies = new ItemJellyBaby("jellybaby");
 	public static ItemBowtie bowtie = new ItemBowtie("bowtie");
+	public static ItemStetson stetson = new ItemStetson("stetson");
 
 
 	public static void createItems() {
@@ -21,6 +22,7 @@ public class ModItems {
 		registerItem(itemScarf,"scarf");
 		registerItem(jellyBabies,"jellybaby");
 		registerItem(bowtie,"bowtie");
+		registerItem(stetson,"stetson");
 
 
 	}
