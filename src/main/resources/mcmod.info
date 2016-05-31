@@ -2,14 +2,14 @@
 {
   "modid": "fezmod",
   "name": "The Fez Mod",
-  "description": "",
+  "description": "A mod that adds Doctor Who related items into Minecraft.",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "",
+  "url": "http://sr2610.com/modding.php",
   "updateUrl": "",
   "authorList": ["SR2610"],
   "credits": "",
-  "logoFile": "",
+  "logoFile": "assets/fezmod/textures/logo.png",
   "screenshots": [],
   "dependencies": []
 }
