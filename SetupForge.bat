@@ -1,4 +1,4 @@
-ECHO OFF
+@ECHO off
 TITLE SETTING UP WORKSPACE
 ECHO Downloading Forge
 CALL gradlew setupDecompWorkspace --refresh-dependencies
