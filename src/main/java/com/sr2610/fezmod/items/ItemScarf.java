@@ -1,6 +1,5 @@
 package com.sr2610.fezmod.items;
 
-import com.sr2610.fezmod.FezMod;
 import com.sr2610.fezmod.client.model.ModelScarf;
 
 import net.minecraft.client.model.ModelBiped;

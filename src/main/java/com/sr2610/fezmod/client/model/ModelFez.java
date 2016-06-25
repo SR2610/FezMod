@@ -7,6 +7,7 @@ import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+
 @SideOnly(Side.CLIENT)
 public class ModelFez extends ModelBiped {
 
@@ -26,7 +27,8 @@ public class ModelFez extends ModelBiped {
 	}
 
 	@Override
-	public void render(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch, float scale) {
+	public void render(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
+			float headPitch, float scale) {
 		setRotationAngles(limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch, scale, entity);
 		GL11.glPushMatrix();
 		GL11.glScaled(1.2, 1.2, 1.2);
