@@ -1,0 +1,17 @@
+#Items
+item.fezmod:fez.name=土耳其毡帽
+item.fezmod:glasses.name=3D 立体眼镜
+item.fezmod:scarf.name=围巾
+item.fezmod:jellybaby.name=豆形软糖
+item.fezmod:bowtie.name=领结
+item.fezmod:stetson.name=斯泰森毡帽
+
+#Creative Tabs
+itemGroup.fezmod=土耳其毡帽模组
+
+#Flavour Lines
+flavour.fez=我现在戴上土耳其毡帽！
+flavour.glasses=哦，是的！
+flavour.scarf=你喜欢豆形软糖吗？
+flavour.stetson=斯泰森毡帽是很酷的!
+flavour.bowtie=领结也很酷!
