@@ -8,6 +8,6 @@ public final class Reference {
 	public static final String GUIFACTORY = "com.sr2610.fezmod.config.GuiFactory";
 	public static final String PREFIX_NAME = "fezmod:";
 	public static final String ARMOR_PREFIX = "fezmod:textures/models/";
-	public static final String UPDATEJSON = "http://sr2610.com/fezmod/fezmodUpdate.json";
+	public static final String UPDATEJSON = "https://raw.githubusercontent.com/SR2610/FezMod/master/fezmodUpdate.json";
 
 }
