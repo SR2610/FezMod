@@ -17,13 +17,13 @@ public class ItemHandler {
 		if (event.getEntityLiving() instanceof EntityPlayer) {
 			EntityPlayer player = (EntityPlayer) event.getEntityLiving();
 
-			if (player.inventory.armorInventory[3] != null
+			/*if (player.inventory.armorInventory[3] != null
 					&& player.inventory.armorInventory[3].getItem() == ModItems.itemFez) {
 				player.addPotionEffect(new PotionEffect(Potion.getPotionById(10), 20, 40));
 				event.setCanceled(true);
 				player.setHealth(1.0F);
-				player.inventory.armorInventory[3] = null;
-			}
+				player.inventory.armorInventory[3] = null;*/
+			//}
 		}
 	}
 

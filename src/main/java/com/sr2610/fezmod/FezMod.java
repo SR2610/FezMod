@@ -4,7 +4,7 @@ import com.sr2610.fezmod.items.ModItems;
 import com.sr2610.fezmod.proxy.CommonProxy;
 
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -20,8 +20,8 @@ public class FezMod {
 
 	public static final CreativeTabs tabFezMod = new CreativeTabs(Reference.MOD_ID) {
 		@Override
-		public Item getTabIconItem() {
-			return ModItems.itemFez;
+		public ItemStack getTabIconItem() {
+			return new ItemStack(ModItems.itemFez);
 		}
 	};
 
