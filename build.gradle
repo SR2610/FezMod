@@ -17,8 +17,8 @@ group= "com.sr2610.fezmod"
 archivesBaseName = "fezmod"
 
 minecraft {
-    version = "1.11.2-13.20.0.2228"
-    runDir = "run"
+  version = "1.11.2-13.20.0.2310"
+    runDir = "run"    
     mappings = "snapshot_20161220"
 }
 

@@ -2,48 +2,36 @@ package com.sr2610.fezmod.config;
 
 import com.sr2610.fezmod.Reference;
 
-import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.common.config.Config;
+import net.minecraftforge.common.config.ConfigManager;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
+@Config(modid = Reference.MOD_ID)
+@Config.LangKey(Reference.CONFIG_LANG)
 public class ConfigHandler {
 
-	public static Configuration configFile;
-	public static boolean enableFlavourLines = true;
+	@Config.Comment("Set to false if you want the fez to be purely cosmetic.")
 	public static boolean fezRegen = true;
-	public static float speedProbability = 0.1F;
+
+	@Config.Comment("The probabillity of reciving a speed boost from eating some Jelly Babies")
+	public static double speedProbability = 0.1;
+
+	@Config.Comment("The duration of speed boost recived from Jelly Babies")
 	public static int speedDuration = 5;
 
-	public static void initConfig(FMLPreInitializationEvent event) {
-		configFile = new Configuration(event.getSuggestedConfigurationFile());
-		syncConfig();
-	}
+	@Config.Comment("Set to false if you don't want flavour lines on items.")
+	public static boolean enableFlavourLines = true;
 
+}
 
-
+@Mod.EventBusSubscriber
+class EventHandler {
 	@SubscribeEvent
-	public void onConfigChanged(ConfigChangedEvent.OnConfigChangedEvent eventArgs) {
-		if (eventArgs.getModID().equals(Reference.MOD_ID))
-			syncConfig();
+	public static void onConfigChanged(ConfigChangedEvent.OnConfigChangedEvent event) {
+		if (event.getModID().equals(Reference.MOD_ID)) {
+			ConfigManager.sync(Reference.MOD_ID, Config.Type.INSTANCE);
+		}
 	}
-
-	private static void syncConfig() {
-		
-		enableFlavourLines = configFile.getBoolean("Flavour Lines", Configuration.CATEGORY_GENERAL, enableFlavourLines,
-				"Set to false if you don't want flavour lines on items.");
-
-		fezRegen = configFile.getBoolean("Fez Regeneration", Configuration.CATEGORY_GENERAL, fezRegen,
-				"Set to false if you want the fez to be purely cosmetic.");
-
-		speedProbability = configFile.getFloat("Jelly Baby Speed Boost", Configuration.CATEGORY_GENERAL,
-				speedProbability, 0, 1, "The probabillity of reciving a speed boost from eating some Jelly Babies");
-
-		speedDuration = configFile.getInt("Jelly Baby Speed Duration", Configuration.CATEGORY_GENERAL, speedDuration, 0,
-				60, "The duration of speed boost recived from Jelly Babies");
-
-		if (configFile.hasChanged())
-			configFile.save();
-	}
-
 }

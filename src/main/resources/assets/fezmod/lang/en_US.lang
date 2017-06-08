@@ -15,3 +15,16 @@ flavour.glasses=Oh, yes!
 flavour.scarf=Would you like a Jelly Baby?
 flavour.stetson=Stetsons are cool!
 flavour.bowtie=Bow Ties are cool too!
+
+#CONFIG
+fezmod.config.title=Fez Mod Configuration
+fezmod.general.client=Client Settings
+fezmod.general.client.tooltip=These settings only have an effect on the local client.
+fezmod.general.fezregen=Fez Regeneration
+fezmod.general.fezregen.tooltip=Set to false if you want the fez to be purely cosmetic.  The fez will no relonger regenerate health upon taking lethal damage.
+fezmod.general.client.enableflavourlines=Enable Flavour Lines
+fezmod.general.client.enableflavourlines.tooltip=Set to false if you don't want flavour lines on items. - Only matters Clientside.
+fezmod.general.speedduration=Speed Boost Duration
+fezmod.general.speedduration.tooltip=The duration of speed boost recived from Jelly Babies
+fezmod.general.speedprobability=Speed Boost Chance
+fezmod.general.speedprobability.tooltip=The chance of reciving a speed boost from eating some Jelly Babies

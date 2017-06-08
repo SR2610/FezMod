@@ -6,12 +6,12 @@ import com.sr2610.fezmod.FezMod;
 import com.sr2610.fezmod.Reference;
 import com.sr2610.fezmod.config.ConfigHandler;
 
+import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.text.translation.I18n;
 
 public class ItemModArmor extends ItemArmor {
 
@@ -31,9 +31,9 @@ public class ItemModArmor extends ItemArmor {
 	}
 
 	@Override
-	public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean advanced) {
+	public void addInformation(ItemStack stack, EntityPlayer player, List<String> list, boolean advanced) {
 		if (ConfigHandler.enableFlavourLines)
-			list.add(I18n.translateToLocal("flavour." + rawName));
+			list.add(I18n.format("flavour." + rawName));
 	}
 
 }

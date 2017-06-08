@@ -12,7 +12,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = Reference.MOD_ID, version = Reference.VERSION, guiFactory = Reference.GUIFACTORY, updateJSON = Reference.UPDATEJSON)
+@Mod(modid = Reference.MOD_ID, version = Reference.VERSION, updateJSON = Reference.UPDATEJSON)
 public class FezMod {
 
 	@SidedProxy(serverSide = Reference.PROXY_COMMON, clientSide = Reference.PROXY_CLIENT)
