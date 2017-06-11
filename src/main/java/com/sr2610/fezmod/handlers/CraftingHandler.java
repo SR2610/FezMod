@@ -26,13 +26,12 @@ public class CraftingHandler {
 				new ItemStack(Blocks.STAINED_GLASS_PANE, 1, 11), 'R', new ItemStack(Blocks.STAINED_GLASS_PANE, 1, 14));
 		GameRegistry.addRecipe(new ItemStack(ModItems.itemFez), " BG", "BRR", " RR", 'G', Items.GOLD_INGOT, 'B',
 				new ItemStack(Blocks.WOOL, 1, 15), 'R', new ItemStack(Blocks.WOOL, 1, 14));
-		GameRegistry.addRecipe(new ItemStack(ModItems.itemStetson), "B B", "BBB",'B',
+		GameRegistry.addRecipe(new ItemStack(ModItems.itemStetson), "B B", "BBB", 'B',
 				new ItemStack(Blocks.WOOL, 1, 12));
-		GameRegistry.addRecipe(new ItemStack(ModItems.itemBowtie), "R R", "RRR","R R",'R',
+		GameRegistry.addRecipe(new ItemStack(ModItems.itemBowtie), "R R", "RRR", "R R", 'R',
 				new ItemStack(Blocks.WOOL, 1, 14));
-		GameRegistry.addRecipe(new ItemStack(ModItems.itemScarf), "RRR", "Y Y","G G",'R',
-				new ItemStack(Blocks.WOOL, 1, 14),'Y',
-				new ItemStack(Blocks.WOOL, 1, 4),'G',
+		GameRegistry.addRecipe(new ItemStack(ModItems.itemScarf), "RRR", "Y Y", "G G", 'R',
+				new ItemStack(Blocks.WOOL, 1, 14), 'Y', new ItemStack(Blocks.WOOL, 1, 4), 'G',
 				new ItemStack(Blocks.WOOL, 1, 5));
 	}
 

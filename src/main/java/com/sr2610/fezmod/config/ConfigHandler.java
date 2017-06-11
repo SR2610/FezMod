@@ -30,8 +30,7 @@ public class ConfigHandler {
 class EventHandler {
 	@SubscribeEvent
 	public static void onConfigChanged(ConfigChangedEvent.OnConfigChangedEvent event) {
-		if (event.getModID().equals(Reference.MOD_ID)) {
+		if (event.getModID().equals(Reference.MOD_ID))
 			ConfigManager.sync(Reference.MOD_ID, Config.Type.INSTANCE);
-		}
 	}
 }

@@ -5,6 +5,7 @@ import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+
 @SideOnly(Side.CLIENT)
 public class ModelScarf extends ModelBiped {
 	ModelRenderer Shape1;
@@ -56,16 +57,15 @@ public class ModelScarf extends ModelBiped {
 		setRotation(Shape6, 0F, 0F, 0F);
 	}
 
-	private static void setRotation(ModelRenderer model, float x, float y,
-			float z) {
+	private static void setRotation(ModelRenderer model, float x, float y, float z) {
 		model.rotateAngleX = x;
 		model.rotateAngleY = y;
 		model.rotateAngleZ = z;
 	}
 
 	@Override
-	public void render(Entity entity, float swingTime, float swingAmpl,
-			float rightArmAngle, float headAngleX, float headAngleY, float scale) {
+	public void render(Entity entity, float swingTime, float swingAmpl, float rightArmAngle, float headAngleX,
+			float headAngleY, float scale) {
 		Shape1.render(scale);
 		Shape2.render(scale);
 		Shape3.render(scale);

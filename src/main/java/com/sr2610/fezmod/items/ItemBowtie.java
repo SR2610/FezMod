@@ -9,7 +9,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class ItemBowtie extends ItemModArmor{
+public class ItemBowtie extends ItemModArmor {
 
 	public ItemBowtie(ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn,
 			String unlocalizedName) {
@@ -20,10 +20,8 @@ public class ItemBowtie extends ItemModArmor{
 		super(ArmorMaterial.LEATHER, 0, EntityEquipmentSlot.CHEST, unlocalizedName);
 	}
 
-
-
 	@Override
-    @SideOnly(Side.CLIENT)
+	@SideOnly(Side.CLIENT)
 	public ModelBiped getArmorModel(EntityLivingBase entityLiving, ItemStack itemStack, EntityEquipmentSlot armorSlot,
 			net.minecraft.client.model.ModelBiped _default) {
 		return new ModelBowtie();

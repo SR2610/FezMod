@@ -7,7 +7,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModItems {
-	
+
 	public static ItemFez itemFez = new ItemFez("fez");
 	public static ItemGlasses itemGlasses = new ItemGlasses("glasses");
 	public static ItemScarf itemScarf = new ItemScarf("scarf");
@@ -15,15 +15,13 @@ public class ModItems {
 	public static ItemBowtie itemBowtie = new ItemBowtie("bowtie");
 	public static ItemStetson itemStetson = new ItemStetson("stetson");
 
-
 	public static void createItems() {
-		registerItem(itemFez,"fez");
-		registerItem(itemGlasses,"glasses");
-		registerItem(itemScarf,"scarf");
-		registerItem(itemJellyBabies,"jellybaby");
-		registerItem(itemBowtie,"bowtie");
-		registerItem(itemStetson,"stetson");
-
+		registerItem(itemFez, "fez");
+		registerItem(itemGlasses, "glasses");
+		registerItem(itemScarf, "scarf");
+		registerItem(itemJellyBabies, "jellybaby");
+		registerItem(itemBowtie, "bowtie");
+		registerItem(itemStetson, "stetson");
 
 	}
 
@@ -31,7 +29,5 @@ public class ModItems {
 		GameRegistry.register(item, new ResourceLocation(Reference.MOD_ID, name));
 
 	}
-	
-
 
 }

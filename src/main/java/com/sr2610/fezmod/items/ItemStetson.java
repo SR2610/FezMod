@@ -9,7 +9,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class ItemStetson extends ItemModArmor{
+public class ItemStetson extends ItemModArmor {
 
 	public ItemStetson(ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn,
 			String unlocalizedName) {
@@ -20,11 +20,8 @@ public class ItemStetson extends ItemModArmor{
 		super(ArmorMaterial.LEATHER, 0, EntityEquipmentSlot.HEAD, unlocalizedName);
 	}
 
-
-
-
 	@Override
-    @SideOnly(Side.CLIENT)
+	@SideOnly(Side.CLIENT)
 	public ModelBiped getArmorModel(EntityLivingBase entityLiving, ItemStack itemStack, EntityEquipmentSlot armorSlot,
 			net.minecraft.client.model.ModelBiped _default) {
 		return new ModelStetson();

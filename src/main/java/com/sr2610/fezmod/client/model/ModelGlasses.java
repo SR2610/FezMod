@@ -7,13 +7,14 @@ import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+
 @SideOnly(Side.CLIENT)
 public class ModelGlasses extends ModelBiped {
 
 	public ModelGlasses() {
 		textureWidth = 32;
 		textureHeight = 16;
-	    bipedHead = new ModelRenderer(this, 0, 0);
+		bipedHead = new ModelRenderer(this, 0, 0);
 
 		bipedHead.addBox(4F, -4F, -2F, 1, 1, 3);
 
@@ -24,13 +25,10 @@ public class ModelGlasses extends ModelBiped {
 		bipedHead.addBox(3F, -5F, -5F, 1, 3, 1);
 		bipedHead.addBox(4F, -5F, -5, 1, 2, 3);
 
-		
 		bipedHead.addBox(-5F, -4F, -2F, 1, 1, 3);
 
-		
 		bipedHead.addBox(-5F, -5F, -5F, 1, 2, 3);
 
-		
 		bipedHead.addBox(-4F, -5F, -5F, 1, 3, 1);
 
 		bipedHead.addBox(1F, -3F, -5F, 2, 1, 1);
@@ -43,8 +41,7 @@ public class ModelGlasses extends ModelBiped {
 		bipedHead.addBox(-3F, -4F, -5F, 2, 1, 1);
 		bipedHead.setTextureOffset(24, 0);
 		bipedHead.addBox(1F, -4F, -5F, 2, 1, 1);
-	
-	
+
 	}
 
 	private static void setRotation(ModelRenderer model, float x, float y, float z) {
@@ -54,7 +51,8 @@ public class ModelGlasses extends ModelBiped {
 	}
 
 	@Override
-	public void render(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch, float scale) {
+	public void render(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
+			float headPitch, float scale) {
 		setRotationAngles(limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch, scale, entity);
 		GL11.glPushMatrix();
 		GL11.glScaled(1, 1, 1);

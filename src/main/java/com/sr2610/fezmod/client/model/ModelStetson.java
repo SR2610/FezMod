@@ -7,6 +7,7 @@ import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+
 @SideOnly(Side.CLIENT)
 public class ModelStetson extends ModelBiped {
 
@@ -33,13 +34,13 @@ public class ModelStetson extends ModelBiped {
 		bipedHead.addBox(1F, -11F, -2F, 1, 1, 4);
 
 		bipedHead.addBox(-2F, -11F, -2F, 1, 1, 4);
-	      setRotation(bipedHead, 0.05F, 0F, 0F);
-
+		setRotation(bipedHead, 0.05F, 0F, 0F);
 
 	}
 
 	@Override
-	public void render(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch, float scale) {
+	public void render(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
+			float headPitch, float scale) {
 		setRotationAngles(limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch, scale, entity);
 		GL11.glPushMatrix();
 		GL11.glScaled(1.2, 1.2, 1.2);

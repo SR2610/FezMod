@@ -16,8 +16,9 @@ public class ItemJellyBaby extends ItemFood {
 		super(1, 0.1F, false);
 		setCreativeTab(CreativeTabs.FOOD);
 		setCreativeTab(FezMod.tabFezMod);
-		setUnlocalizedName(Reference.PREFIX_NAME+unlocalizedName);
-		this.setPotionEffect(new PotionEffect(Potion.getPotionById(1), ConfigHandler.speedDuration*20), (float)ConfigHandler.speedProbability);
+		setUnlocalizedName(Reference.PREFIX_NAME + unlocalizedName);
+		setPotionEffect(new PotionEffect(Potion.getPotionById(1), ConfigHandler.speedDuration * 20),
+				(float) ConfigHandler.speedProbability);
 	}
 
 	@Override

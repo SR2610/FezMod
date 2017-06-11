@@ -34,9 +34,9 @@ public class ItemScarf extends ItemModArmor {
 	public void onUpdate(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected) {
 		if (entityIn instanceof EntityPlayer) {
 			EntityPlayer player = (EntityPlayer) entityIn;
-			if (player.inventory.hasItemStack(new ItemStack(ModItems.itemJellyBabies))) {
+			if (player.inventory.hasItemStack(new ItemStack(ModItems.itemJellyBabies)))
 				return;
-			} else {
+			else {
 				int randNo = worldIn.rand.nextInt(10000);
 				if (randNo <= 1)
 					player.inventory.addItemStackToInventory(new ItemStack(ModItems.itemJellyBabies, 1));
